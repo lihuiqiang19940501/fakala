@@ -39,8 +39,21 @@
 	</div>
 	<!--bander部分-->
 	<div id="bander" class="row">
+		<!--轮播图-->
+		<section class="banner">
+			<!-- 轮播图内容 -->
+			<div class="banner-cell" style="opacity: 1"><img src="img/banner0.jpg"></div>
+			<div class="banner-cell" style="background:url(img/bannerB.jpg) repeat center; color:#000;">
+				<div  class="banner-cell-t"></div>
+			</div>
+			<div class="banner-cell-Cup"></div>
+			<!-- 清除浮动 -->
+			<p style="clear: both"></p>
+			<!-- 轮播图指示器 -->
+			<div class="indicator"></div>
+		</section>
 		<div class="col-3"></div>
-		<div class="d-flex flex-column ">
+		<div id="banderTop" class="d-flex flex-column ">
 				<div id="banderText" class="text-center t-bt text-white">
 					更快捷安全的自动发卡平台
 				</div>
@@ -55,8 +68,8 @@
 		<div class="col-3"></div>
 	</div>
 	<!--4个li展示-->
-		<ul class="row d-flex justify-content-center list-unstyled  m-4" id="card">
-			<li class="col-lg-2 col-md-4 col-sm-4 mr-3 product">
+		<ul class="row d-flex justify-content-center list-unstyled mt-5" id="card">
+			<li class="col-lg-2 col-md-4 col-sm-4 mr-3 product ">
 				<div class="container">
 				<div class="before b1"></div>
 				<div class="after a1"></div>
@@ -85,8 +98,51 @@
 				<h5>诚心服务</h5>
 			</li>
 		</ul>
+	<!--寄售服务项目 -开始-->
+	<div class="row justify-content-center ItemTop">
+		<div class="ItemsTit Title"><span>CONSIGNMENT SERVICE TIEMS</span><p class="mt-2">寄售项目类别</p></div>
+	</div>
+	<div class="Items row d-flex  justify-content-center mt-5 mb-5">
+		<div class="ml-4 mr-4  MoverK">
+			<a href="JavaScript:;" class="Item ">
+				<img src="img/ItemsT01.jpg" width="100%" >
+				<hr class="ItemC1"></hr>
+				<p>电商/优惠卷/折扣卷</p>
+			</a>
+		</div>
+		<div  class="ml-4 mr-4 MoverK">
+			<a href="JavaScript:;" class="Item ">
+				<img src="img/ItemsT02.jpg" width="100%" >
+				<hr class="ItemC2"></hr>
+				<p>论坛/邀请码/注册码/积分充值卡</p>
+			</a>
+		</div>
+		<div  class="ml-4 mr-4 MoverK">
+			<a href="JavaScript:;" class="Item ">
+				<img src="img/ItemsT03.jpg" width="100%" >
+				<hr class="ItemC3"></hr>
+				<p>企业个人软件/充值码/注册码</p>
+			</a>
+		</div>
+		<div  class="ml-4 mr-4  MoverK mb-5">
+			<a href="JavaScript:;" class="Item ">
+				<img src="img/ItemsT04.jpg" width="100%">
+				<hr class="ItemC4"></hr>
+				<p>腾讯/爱奇艺/优酷/视频CDK/游戏CDK</p>
+			</a>
+		</div>
+	</div>
+	<!--寄售服务项目 -结束-->
+	<!--寄售流程 开始-->
+	<div class="row bg-white justify-content-center mt-5">
+		<div class="ItemsTit Title mt-5"><span>CONSIGNMENT SERVICE PROCESS</span><p class="mt-2">寄售流程</p></div>
+	</div>
+	<div class="row bg-white justify-content-center">
+		<img src="img/six.jpg" alt="">
+	</div>
+	<!--寄售流程 结束-->
 	<div class="row inMiddle justify-content-center" >
-		支持多种支付渠道-享受极速发卡之旅
+		支持<span>多种</span>支付渠道-享受<span>极速</span>发卡之旅
 	</div>
 	<div class="row d-flex justify-content-center mt-lg-5 mt-md-2">
 		<div class="col-lg-2 col-md-4 col-sm-6 "><img src="img/zfb_on.png" alt=""></div>
@@ -99,8 +155,6 @@
 		<div class="col-lg-2 col-md-4 col-sm-6 access">正在接入...</div>
 	</div>
 </div>
-<script src="js/index.js">
-
-</script>
+<script src="js/index.js"></script>
 </body>
 </html>
