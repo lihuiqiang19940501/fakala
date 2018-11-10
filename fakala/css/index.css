@@ -4,6 +4,7 @@
 }
 body{
 	font-size:16px;
+	background: #f4f7fa;
 }
 #nav_top{
 	height:70px;
@@ -56,11 +57,39 @@ body{
 	}
 /*bander部分*/
 #bander{
-	background: url("../img/banner.jpg") no-repeat;
-	background-size:100% 100%;
 	height:600px;
-	background-position:center center;
 }
+/*---------------------------渐变轮播图开始-----------------------------*/
+#banderTop{
+	z-index: 999;
+}
+#bander{
+	position: relative;
+}
+
+#bander .banner .banner-cell{
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	transition: 1s;
+}
+#bander .banner .banner-cell img{
+	width: 100%;
+	height: 100%;
+}
+#bander .banner .banner-cell-t{
+	background-image:url(../img/banner01.png);
+	background-repeat:no-repeat;
+	margin-top:5%;
+	margin-left: 70%;
+	background-size:auto 100%;
+	width: 500px;
+	height: 400px;
+}
+/*---------------------------渐变轮播图结束-----------------------------*/
 #banderText,#banderText2{
 	opacity: 0;
 	transition: 1.5s;
@@ -90,16 +119,18 @@ body{
 	border:1px solid #0aa1ed;
 	border-radius: 10px;
 	transition: 200ms;
+	box-shadow:0px 0px 50px -20px #4e555b;
 }
 #card li:hover{
 	border:1px solid #0aa1ed;
 	background: url("../img/producet_bg.jpg");
+	box-shadow:0px 0px 25px 2px #4e555b;
 }
 #card h5{
 	text-align: center;
 	font-family: 微软雅黑;
 }
-/*翻转动画*/
+/*4个card翻转动画*/
 #card .container{
 	/*宽度、高度、左边距、相对定位、光标小手状态、3D的视角*/
 	margin: 10% auto;
@@ -156,6 +187,22 @@ body{
 .b4{background: url("../img/product_header_icon_04.png") no-repeat center center;}
 .a4{background: url("../img/product_header_active_icon_04.png") no-repeat center center;}
 
+/*寄售服务*/
+.ItemTop{margin-top: 5%}
+.ItemsTit p{ background:url(../img/tit1.png) no-repeat center; color:#333;text-align: center;font-size: 1.3rem}
+.ItemsTit span{ color:#999;font-size: 2rem;}
+.Items div{background:#FFF; color:#333; text-align:center;width: 240px;height: 220px;border-radius:5px;overflow: hidden}
+.Items p{ width:90%; margin:0 auto}
+.Items div a hr{width:20%;height:2px;margin:8% auto;transition: 1s}
+.Items div a{text-decoration: none;color:#000}
+.ItemC1{ background:#1287ff;}
+.ItemC2{ background:#ffb053;}
+.ItemC3{ background:#47e3ff;}
+.ItemC4{ background:#76cd7c;}
+.Item:hover hr{width:90%}
+.MoverK{box-shadow:0px 0px 100px -20px #4e555b;margin-top: 1%}
+.MoverK:hover{transition:0.3s;box-shadow:0px 0px 25px 2px #4e555b;}
+
 /*inMiddle*/
 .inMiddle{
 	height: 90px;
@@ -164,6 +211,9 @@ body{
 	background:linear-gradient(0deg,#126ccc 0%,#007DB3 100%) ;
 	color: #fff;
 }
+.inMiddle span{
+	color:#ffc107 ;
+}
 .access{
 	font-size: 2rem;
 	font-family:华文隶书;
@@ -171,3 +221,6 @@ body{
 	padding-top: 23px;
 	padding-left: 50px;
 }
+
+
+
