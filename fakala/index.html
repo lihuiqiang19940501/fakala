@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发卡啦官网</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/media.css">	
+</head>
+<body>
+<!--格栅布局容器-->
+<div class="container-fluid">
+	<!--nav部分-->
+<header>	
+	<div class="row" id="nav_top">
+		<div class="logop">
+			<a href="#"><img src="img/logo2.png" class="logo"></a>
+		</div>
+		<ul class="nav_first">
+			<li><a href="javascript:;">首页</a></li>
+			<li><a href="javascript:;">产品服务</a></li>
+			<li><a href="javascript:;">个人寄售</a></li>
+			<li><a href="javascript:;">商家入驻</a></li>
+		</ul>
+		<div>
+			<div class="search">
+				<input type="text" class="btn btn-outline-warning pl-0">
+				<input type="button" class="btn btn-warning" value="查询订单" placeholder="输入订单号快速查询">
+			</div>
+		</div>
+		<ul  class="nav_login">
+			<li><a href="javascript:;">登录</a></li>
+			<li><a href="javascript:;">注册</a></li>
+			<li><a href="javascript:;">帮助</a></li>
+			<li><a href="javascript:;">投诉</a></li>
+		</ul>
+		<div class="nav-icon" id="icon">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="nav_login_icon">
+		<ul class="rt icon1">
+			<li><a href="javascript:;">登录</a></li>
+			<li><a href="javascript:;">注册</a></li>
+			<li><a href="javascript:;">帮助</a></li>
+			<li><a href="javascript:;">投诉</a></li>
+		</ul>
+		<ul class="rt icon2">
+			<li><a href="javascript:;">首页</a></li>
+			<li><a href="javascript:;">产品服务</a></li>
+			<li><a href="javascript:;">个人寄售</a></li>
+			<li><a href="javascript:;">商家入驻</a></li>
+		</ul>
+	</div>
+</header>
+	<div class="ttop"></div>
+	<!--bander部分-->
+	<div id="banner" class="bannerP row">
+		<!--轮播图-->
+		<div class="text text1">
+			<h1>更快捷安全的自动发卡平台</h1>
+			<p class="textT">致力于解决虚拟商品的快捷寄售服务</p>
+			<p class="textB">为商户及其买家 提供，便捷、绿色、安全、快速的销售和购买体验。</p>
+			<a href="reg.html" class="btn btn-warning" target="_self">立即加入</a>
+		</div>
+		<div class="text text2">
+			<h1>更极速更超低费率!</h1>
+			<p class="textT">个人寄售费率仅1%!自营回购最高99折!</p>
+			<p class="textB">24h超快审核,支持多种支付渠道,享受极速收/发卡之旅</p>
+			<a href="reg.html" class="btn btn-warning" target="_self">立即加入</a>
+		</div>
+	</div>
+	<!-- 回收卡部分 -->
+	<div id="rec">
+		<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			发卡啦自营回购类别!
+			<a>(点击查看回收费率)</a>
+		</h3>
+		<div>
+			<ul>
+				<li>
+					<img src="img/card/1.jpg" alt="">
+					<span class="cardName">京东E卡</span>
+					<span class="cardSell">95折回购</span>
+					<span class="showbtn">我要出售</span>
+				</li>
+				<li><img src="img/card/2.jpg" alt="">
+					<span class="cardName">移动充值卡</span>
+					<span class="cardSell">97折回购</span>
+					<span class="showbtn">我要出售</span>
+				</li>
+				<li><img src="img/card/3.jpg" alt="">
+					<span class="cardName">联通充值卡</span>
+					<span class="cardSell">97折回购</span>
+					<span class="showbtn">我要出售</span>
+				</li>
+				<li><img src="img/card/4.jpg" alt="">
+					<span class="cardName">电信充值卡</span>
+					<span class="cardSell">97折回购</span>
+					<span class="showbtn">我要出售</span>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<img src="img/card/5.jpg" alt="">
+					<span class="cardName">中国石化</span>
+					<span class="cardSell">95折回购</span>
+					<span class="showbtn">我要出售</span>
+				</li>
+				<li><img src="img/card/6.jpg" alt="">
+					<span class="cardName">中国石油</span>
+					<span class="cardSell">95折回购</span>
+					<span class="showbtn">我要出售</span>
+				</li>
+				<li><img src="img/card/7.jpg" alt="">
+					<span class="cardName">QQ币</span>
+					<span class="cardSell">88折回购</span>
+					<span class="showbtn">我要出售</span>
+				</li>
+				<li><img src="img/card/8.jpg" alt="">
+					<span class="cardName">骏网一卡通</span>
+					<span class="cardSell">78折回购</span>
+					<span class="showbtn">我要出售</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--寄售服务项目 -开始-->
+	<!--4个li展示-->
+<ul class="row d-flex justify-content-center list-unstyled mt-5" id="card">
+	<li class="mr-3 ml-3  product ">
+		<div class="container">
+		<div class="before b1"></div>
+		<div class="after a1"></div>
+		</div>
+		<h5>闪电发货</h5>
+		<p class="li_text">卖家寄售在本站,下单立即发货!享受极速购物体验!</p>
+	</li>
+	<li class="mr-3 ml-3  product">
+		<div class="container">
+		<div class="before b2"></div>
+		<div class="after a2"></div>
+		</div>
+		<h5>销量助增</h5>
+		<p class="li_text">全响应式界面，业内1%超低费率!助您销量一增再增!简约易操作，一站式寄售卡，为你提供稳定服务。</p>
+	</li>
+	<li class="mr-3 ml-3  product">
+		<div class="container">
+		<div class="before b3"></div>
+		<div class="after a3"></div>
+		</div>
+		<h5>安全稳定</h5>
+		<p class="li_text">采用群集服务器,防御高,故障率低,采用md5加密技术,为任何寄售账号密码安全性保驾护航!</p>
+	</li>
+	<li class="mr-3 ml-3 product">
+		<div class="container">
+		<div class="before b4"></div>
+		<div class="after a4"></div>
+		</div>
+		<h5>诚心服务</h5>
+		<p class="li_text">7*24小时客服,系统持续更新,功能持续完善,让商户以及客户的体验不断接近完美是我们一直不变的追求.</p>
+	</li>
+</ul>
+	<div class="row justify-content-center ItemTop">
+		<div class="ItemsTit Title"><span>CONSIGNMENT SERVICE TIEMS</span><p class="mt-2">支持寄售项目类别</p></div>
+	</div>
+	<div class="Items row d-flex  justify-content-center mt-5 mb-5">
+		<div class="ml-4 mr-4  MoverK">
+			<a href="JavaScript:;" class="Item ">
+				<img src="img/ItemsT01.jpg" width="100%" >
+				<hr class="ItemC1"></hr>
+				<p>京东e卡/优惠卷/折扣卷</p>
+			</a>
+		</div>
+		<div  class="ml-4 mr-4 MoverK">
+			<a href="JavaScript:;" class="Item ">
+				<img src="img/ItemsT02.jpg" width="100%" >
+				<hr class="ItemC2"></hr>
+				<p>中石油/中石化/积分充值卡</p>
+			</a>
+		</div>
+		<div  class="ml-4 mr-4 MoverK">
+			<a href="JavaScript:;" class="Item ">
+				<img src="img/ItemsT03.jpg" width="100%" >
+				<hr class="ItemC3"></hr>
+				<p>个人软件/充值码/注册码</p>
+			</a>
+		</div>
+		<div  class="ml-4 mr-4  MoverK mb-5">
+			<a href="JavaScript:;" class="Item ">
+				<img src="img/ItemsT04.jpg" width="100%">
+				<hr class="ItemC4"></hr>
+				<p>腾讯/爱奇艺/优酷/视频CDK/游戏CDK</p>
+			</a>
+		</div>
+	</div>
+	<!--寄售服务项目 -结束-->
+	<!--寄售流程 开始-->
+	<div class="row bg-white justify-content-center mt-5 ItemTop">
+		<div class="ItemsTit Title mt-5"><span>CONSIGNMENT SERVICE PROCESS</span><p class="mt-2">寄售流程</p></div>
+	</div>
+	<div class="row bg-white justify-content-center lct">
+		<img src="img/six.jpg" alt="">
+	</div>
+	<!--寄售流程 结束-->
+
+
+	<div class="row inMiddle justify-content-center" >
+		支持<span>多种</span>支付渠道-享受<span>极速</span>发卡之旅
+	</div>
+	<div class="row d-flex justify-content-center mt-lg-4 mt-md-2 mt-2 pay">
+		<div class=" col-md-2 mr-5"><img src="img/zfb_on.png" alt=""></div>
+		<div class=" col-md-2 ml-2 mr-5"><img src="img/wxzf_on.png" alt=""></div>
+		<div class=" col-md-2 ml-3"><img src="img/qqzf_on.png" alt=""></div>
+	</div>
+	<div class="row d-flex justify-content-center mt-lg-3 mb-lg-0 mt-md-2 mb-lg-5 mb-md-2 mt-2 pay">
+		<div class=" col-md-2 mr-5"><img src="img/cft_on.png" alt=""></div>
+		<div class=" col-md-2 ml-2 mr-5"><img src="img/yl_on.png" alt=""></div>
+		<div class=" col-md-2 ml-3"><img src="img/jr_on.png" alt=""></div>
+	</div>
+	<iframe class="my_footer" src="footer/footer.html" frameborder="0" scrolling="no"></iframe>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
