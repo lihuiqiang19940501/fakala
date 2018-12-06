@@ -1,0 +1,250 @@
+/* navfont */
+@media screen and (min-width:992px) and (max-width: 1250px){
+    #nav_top .logop{
+        margin-left: 0;
+    }
+    #nav_top .nav_first li{
+        padding: 0 .5em;
+    }
+    #nav_top .nav_login li{
+        padding: 0 .1em;
+        margin-right:.4em; 
+    }
+    header #nav_top a{
+        transition: all .5s linear;
+    }
+    #card li{
+        margin-left:5px !important;
+        margin-right: 5px !important; 
+        width: 220px;
+	    height: 350px;
+    }
+    .Items div{
+        margin-left:5px !important;
+        margin-right:5px !important; 
+    }
+  }
+/*pad*/
+@media screen and (min-width:768px) and (max-width: 991px){
+    #bannerText{
+        text-align: center !important;
+    }
+    #bannerText2 p{
+        text-align: center !important;
+    }
+    #nav_top .logop {
+		margin-left: 0;
+    }
+	#nav_top .logop .logo{
+		height:40px;
+    }
+    #nav_top .nav_first li{
+        padding: 0 .2em;
+    }
+    #nav_top .nav_login{
+        display: none;
+    }
+    #nav_top .nav-icon{
+        display: block;
+    }
+    header .nav_login_icon .icon1{
+        display: block;
+    }
+    #banner .t-bt{
+        font-size: 3rem;
+    }
+    #banner .t_title{
+        font-size: 1rem;
+    }
+    #card li{
+        margin-left:50px !important;
+        margin-right: 50px !important; 
+        margin-bottom: 20px;
+        width: 270px;
+	    height: 400px;
+    }
+    .Items div{
+        margin-left:50px !important;
+        margin-right:50px !important; 
+        margin-bottom: 30px;
+    }
+    .inMiddle{
+        height: 70px;
+        line-height: 70px;
+        font-size:2rem ;
+    }
+}
+/*手机*/
+@media screen and (min-width:591px) and (max-width: 767px){
+    #nav_top .logop {
+		margin-left: 0;
+    }
+    #nav_top .nav_first{
+        display: none;
+    }
+    #nav_top .nav_login{
+        display: none;
+    }
+    #nav_top .nav-icon{
+        display: block;
+    }
+    #banner .t-bt{
+        font-size: 3rem;
+    }
+    #banner .t_title{
+        font-size: 1rem;
+    }
+    #card li{
+        margin-bottom: 20px;
+        width: 230px;
+	    height: 350px;
+    }
+    .Items div{
+        margin-bottom: 30px;
+    }
+    .inMiddle{
+        height: 70px;
+        line-height: 70px;
+        font-size:2rem ;
+    }
+    .pay div{
+        width: 20%;
+    }
+    .lct img{
+        width: 700px; 
+        height: 500px;
+        transition: .5s;
+    }
+}
+
+@media screen and (max-width:590px){
+    #nav_top .nav_first{
+        display: none;
+    }
+    #nav_top .nav_login{
+        display: none;
+    }
+    #nav_top .logop {
+		margin-left: 0;
+    }
+    #nav_top .logop .logo{
+		height:30px;
+    }
+    div.search{
+        width: 170px;
+        height: 40px;
+    }
+    div.search input:first-child{
+        width: 100px;
+        height: 30px;
+        font-size: 0.5rem
+    }
+    div.search input:last-child{
+        width: 60px;
+        height: 30px;
+        font-size: 0.5rem;
+        padding-left:6px;
+    }
+    #nav_top .nav-icon{
+        display: block;
+        margin: 12px 5px;
+    }
+    #nav_top .nav-icon span{
+        width: 20px;
+        height: 2px;
+        margin: 4px 0;
+    }
+    #banner .t-bt{
+        font-size: 2rem;
+        padding-top:15%;
+    }
+    #banner .t_title{
+        font-size: .8rem;
+    }
+    #card{
+        margin-bottom: 40px;
+    }
+    #card li{
+        margin-bottom: 10px;
+        width: 180px;
+        height: 280px;
+        margin: 10px 8px !important;
+    }
+    #card li .li_text{
+        display: none;
+    }
+    .Items{
+        margin-bottom: 0px !important;
+    }
+    .Items div{
+        margin-left:3px !important;
+        margin-right:3px !important; 
+        margin-bottom: 5px;
+        width: 190px;
+        height: 170px;
+    }
+    .ItemTop{
+        margin-top: 0px !important;
+    }
+    .ItemTop span{
+        font-size: 20px;
+    }
+	.MoverK{
+		 font-size: 15px;
+	}
+	.MoverK hr{
+		margin-top:10px !important;
+		margin-bottom:5px !important;
+	}
+    .inMiddle{
+        height: 60px;
+        line-height: 60px;
+        font-size:1.5rem ;
+    }
+    .pay div{
+        width: 7%;
+    }
+    .lct img{
+        width: 500px; 
+        height: 350px;
+        transition: .5s;
+    }
+    .my_footer{
+        height: 110px !important;
+    }
+    /* 手机轮播部分 */
+    #banner{
+        height: 300px !important;
+    }
+    #banner .banner .banner-cell{
+        height: 300px !important;
+    }
+    #banner .banner .banner-cell-t{
+       display: none;
+    }
+    .bannerTop{
+        display: none;
+    }
+    #bannerText{
+        padding: 0px !important;
+        margin-top: 10px !important;
+        text-align: center !important;
+        margin-bottom: 0px !important;
+    }
+    #bannerText2 p{
+        text-align: center !important;
+        margin-bottom: 0px !important;
+    }
+    #banner .jiaru{
+        margin-top: 7%;
+    }
+    #banner .jiaru .btn{
+        width:20%;
+        font-size: .7rem;
+    }
+}
+@media screen and (min-width:1251px){
+    .pay div img{
+        width:180px !important;
+    }
+}

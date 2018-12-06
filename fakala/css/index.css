@@ -1,134 +1,204 @@
 *{
-	margin:0;
-	padding:0;
-}
-body{
-	font-size:16px;
+	margin: 0;
+	padding: 0;
+  }
+  ul,ol {
+	list-style: none;
+  }
+  a{
+	text-decoration: none;
+	color: #fff;
+  }
+  body {
+	font-size: 16px;
 	background: #f4f7fa;
-}
+	font-family: Arial, 微软雅黑;
+  }
+  .lt {
+	float: left;
+  }
+  .rt {
+	float: right;
+  }
+  .clear:before,
+  .clear:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  /* 通用样式结束 */
+  header{
+	width: 100%;
+	height: 72px;
+	position: fixed;
+	z-index: 999;
+  }
 #nav_top{
-	height:70px;
-	line-height: 70px;
+  position: relative;
+  justify-content: space-between;
+  font-size: 1.6em;
+  color:#fff;
+  height: 72px;
+  line-height: 72px;
+  background:#fff;
+  box-shadow:0px 0px 25px 2px #4e555b;
+  
 }
-.search{
-	width: 420px;
-	height: 70px;
-}
-#nav_top .nav_first a{
-	display:inline-block;
-	color: #000;
-	text-decoration: none;
-	font-size: 1rem;
-	transition: 0.1s;
-}
-#nav_top .nav_first a:hover,#nav_top .nav_4 a:hover{
-	font-size:1.1rem ;
-	color:#ffc107 ;
-}
-#nav_top .nav_4 a{
-	display:inline-block;
-	color: #000;
-	text-decoration: none;
-	font-size: 1rem;
+#nav_top .logop{
+	margin-left: 5%;
 }
 #nav_top .logo{
-	height:70px;
+	height:50px;
 }
-/*pad*/
-@media screen and (min-width:768px) and (max-width: 991px){
-	#nav_top{
-		height:70px;
-		line-height: 50px;
-	}
-	.logo{
-		display: none;
-	}
+#nav_top ul li{
+	float: left;
+}
+#nav_top .nav_first li{
+	padding: 0 1em;
+	
+}
+#nav_top .nav_login li{
+	padding: 0 .1em;
+	margin-right:1em; 
+}
+.search{
+	width: 310px;
+	height: 72px;
+}
 
+header #nav_top a:hover,header a:hover{
+	color:#ffc107;
+	text-decoration: none;
 }
-/*手机*/
-@media screen and (max-width:767px){
-	#nav_top{
-		height:150px;
-		line-height: 50px;
-	}
-	.logo{
-		display: none;
-	}
-	}
+#nav_top a{
+	display:inline-block;
+	color:#000;
+	font-size: 1rem;
+}
+
+#nav_top .nav-icon{
+	position: relative;
+	top: 5px;
+	display: none;
+	cursor: pointer;
+	margin: 10px 10px;
+}
+.nav-icon span{
+  display: block;
+  width: 26px;
+  height: 3px;
+  border-radius: 5px;
+  background: #000;
+  margin: 5px 0;
+  
+}
+div.nav_login_icon{
+	box-shadow:0px 0px 25px 2px #4e555b;
+}
+div.nav_login_icon ul{
+	background: rgba(0,0,0,0.2);
+	width: 100px;
+	height: 145px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+}
+div.nav_login_icon ul li{
+	margin-top: 10px;
+}
+header .nav_login_icon ul{
+	transition: all .7s linear;
+}
+.icon1{
+	opacity: 0 ;
+}
+.icon2{
+	opacity: 0 ;
+} 
 /*bander部分*/
-#bander{
-	height:600px;
+.ttop{
+	height: 72px;
+}
+#banner{
+	height:700px;
+	width: 100%;
+	margin: 0px;
+	height: 700px;
+	background-size:100% 100% !important; 
 }
 /*---------------------------渐变轮播图开始-----------------------------*/
-#banderTop{
-	z-index: 999;
+.bannerP{
+	background: url("../img/banner.jpg") no-repeat;
+	
 }
-#bander{
-	position: relative;
+.bannerP2{
+	background: url("../img/banner2.jpg") no-repeat !important;
 }
-
-#bander .banner .banner-cell{
-	width: 100%;
-	height: 600px;
+#banner div.text{
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 20%;
+	left: 50%;
 	opacity: 0;
-	transition: 1s;
+	margin-left: -400px;
+	transition: all .5s linear;
+	width: 800px;
+	z-index: 999;
+	text-align: center;
+	color: #fff;
 }
-#bander .banner .banner-cell img{
-	width: 100%;
-	height: 100%;
+.show{
+	opacity: 1 !important;
 }
-#bander .banner .banner-cell-t{
-	background-image:url(../img/banner01.png);
-	background-repeat:no-repeat;
-	margin-top:5%;
-	margin-left: 70%;
-	background-size:auto 100%;
-	width: 500px;
-	height: 400px;
+.hide{
+	opacity: 0 !important;
+}
+#banner div.text h1{
+	font-size: 4rem;
+}
+#banner div.text p.textT{
+	margin-top: 10%;
+	font-size: 1.5rem;
+}
+#banner div.text1{
+	opacity: 1;
+}
+#banner div.text p.textB{
+	margin-top: 10%;
+	font-size: 1.4rem;
+}
+#banner div.text a{
+	margin-top: 10%;
+	width: 20%;
 }
 /*---------------------------渐变轮播图结束-----------------------------*/
-#banderText,#banderText2{
-	opacity: 0;
-	transition: 1.5s;
-}
-
-.t-bt{
-	font-size: 4rem;
-	padding-top:15%;
-	font-family: 华文宋体;
-	font-weight: bold;
-}
-#bander .t_title{
-	font-size: 1.2rem;
-	font-family: 华文宋体;
-	font-weight: bold;
-}
-#bander .jiaru{
-	margin-top: 7%;
-}
-#bander .jiaru .btn{
-	width:20%;
-}
 /*card部分*/
 #card li{
-	width: 250px;
+	width: 270px;
 	height: 400px;
 	border:1px solid #0aa1ed;
 	border-radius: 10px;
 	transition: 200ms;
 	box-shadow:0px 0px 50px -20px #4e555b;
+	margin-top:10px;
 }
 #card li:hover{
 	border:1px solid #0aa1ed;
 	background: url("../img/producet_bg.jpg");
 	box-shadow:0px 0px 25px 2px #4e555b;
+	margin-top: -10px;
+	transition: 0.4s;
+	color:#fff;
 }
 #card h5{
 	text-align: center;
 	font-family: 微软雅黑;
+}
+#card li .li_text{
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 40px;
+	font-size: 15px;
+	color: #555555cf;
 }
 /*4个card翻转动画*/
 #card .container{
@@ -162,13 +232,7 @@ body{
 	-webkit-backface-visibility:hidden;
 	transition:0.8s;
 }
-/*上移动过渡需要时间*/
-#card .product{
-	transition: 0.4s;
-}
-#card .product:hover{
-	margin-top: -10px;
-}
+/*上移动过渡旋转*/
 #card .product:hover .before{
 	transform:rotateY(180deg);
 	-webkit-transform:rotateY(180deg);
@@ -214,13 +278,96 @@ body{
 .inMiddle span{
 	color:#ffc107 ;
 }
-.access{
-	font-size: 2rem;
-	font-family:华文隶书;
-	font-weight: bold;
-	padding-top: 23px;
-	padding-left: 50px;
+
+.pay div img{
+	width:15vw;
 }
 
+/*页脚部分*/
 
+	.my_footer{
+		width:100%;
+		height:150px;
+	}
+	div.container-fluid{
+		padding: 0;
+	}
 
+/* 回收卡部分 */
+#rec{
+	width: 1200px;
+	height: 333px;
+	border-radius: 5px;
+	margin: 50px auto;
+	box-shadow: 0 0 5px rgba(0,0,0,.8);
+	border: 1px solid transparent;
+}
+#rec:hover{
+	box-shadow: 0 0 5px rgba(1,142,187,.8);
+	border: 1px solid #018ebb;
+}
+#rec h3{
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	border-bottom:1px solid #018ebb; 
+	color: #31aae1;
+}
+#rec h3 a{
+	font-size: 14px;
+	color: #f00;
+}
+#rec h3 a:hover{
+	text-decoration: underline;
+}
+
+#rec div{
+	padding: 20px;
+}
+#rec div ul li{
+	float: left;
+	width: 288px;
+	background: #fff;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	cursor: pointer;
+}
+#rec div ul li:hover{
+	border: 1px solid #31aae1;
+}
+#rec div ul li img{
+	width: 150px;
+	height: 95px;
+}
+#rec div ul li span.cardSell{
+	color: red;
+	margin-left: 20px;
+	width: 88px;
+	height: 20px;
+	display: none;
+	overflow: hidden;
+	text-decoration: underline;
+}
+#rec div ul li span.cardName{
+	color: #666;
+	width: 90px;
+	height: 20px;
+	display: inline-block;
+	overflow: hidden;
+	margin-left: 15px;
+}
+#rec div ul li span.showbtn{
+	float: right;
+	display: inline-block;
+	width: 0px;
+	height: 95px;
+	padding-left: 0px;
+	background: rgba(0,0,0,.5);
+	color:white;
+	border-radius: 0 3px 3px 0;
+	transition: all .2s linear;
+}
+#rec div ul li:hover span.showbtn{
+	width: 25px;
+	padding-left: 4px;
+}
