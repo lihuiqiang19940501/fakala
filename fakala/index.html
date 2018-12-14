@@ -9,12 +9,16 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<link rel="stylesheet" href="css/index.css">
-	<link rel="stylesheet" href="css/media.css">	
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/myUI.css">	
 </head>
 <body>
 <!--格栅布局容器-->
 <div class="container-fluid">
+	<header>
+	</header>	
 	<!--nav部分-->
+	<!--	
 <header>	
 	<div class="row" id="nav_top">
 		<div class="logop">
@@ -58,7 +62,7 @@
 			<li><a href="javascript:;">商家入驻</a></li>
 		</ul>
 	</div>
-</header>
+</header>-->
 	<div class="ttop"></div>
 	<!--bander部分-->
 	<div id="banner" class="bannerP row">
@@ -76,6 +80,13 @@
 			<a href="reg.html" class="btn btn-warning" target="_self">立即加入</a>
 		</div>
 	</div>
+<ul id="side">
+	<li title="我收藏的订单"></li>
+	<li title="我的店铺"></li>
+	<li title="客户服务"></li>
+	<li title="我的好友"></li>
+	<li title="返回顶部"></li>
+</ul>
 	<!-- 回收卡部分 -->
 	<div id="rec">
 		<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -205,11 +216,65 @@
 	<div class="row bg-white justify-content-center mt-5 ItemTop">
 		<div class="ItemsTit Title mt-5"><span>CONSIGNMENT SERVICE PROCESS</span><p class="mt-2">寄售流程</p></div>
 	</div>
-	<div class="row bg-white justify-content-center lct">
-		<img src="img/six.jpg" alt="">
+	<div class="row bg-white" id="lct">
+		<div class="bulletin">
+			<!-- 异步加载最新的公告新闻 -->
+			<!-- <i></i>
+			<span class="ggDate">2018-12-10</span>
+			<span>&nbsp;|&nbsp;</span>
+			<a href="javascript:;">电信话费充值卡维护通知</a>&nbsp;：
+			<span class="ggDetails">电信话费充值卡因运营商维护，暂停处理订单，请用户耐心等待通道恢复，对此带来的不便我们深表歉意。恢复后将重新处理。卡卡礼品网竭诚为您服务！</span>
+			<a href="javascript:;">查看更多..</a> -->
+		</div>
+		<div class="lcIcon">
+			<ul>
+				<li class="lt lcI"><div><i></i></div>
+					<h6>1. 注册帐号，登录帐户</h6>
+				</li>
+				<li class="lt"><b></b></li>
+				<li class="lt lcI">
+					<div><i></i></div>
+					<h6>2. 提交卡密，等待验卡</h6>
+				</li>
+				<li class="lt"><b></b></li>
+				<li class="lt lcI">
+					<div><i></i></div>
+					<h6>3. 验卡成功，资金到帐</h6>
+				</li>
+				<li class="lt"><b></b></li>
+				<li class="lt lcI">
+					<div><i></i></div>
+					<h6>4. 帐户提现，交易成功</h6>
+				</li>
+			</ul>
+		</div>
 	</div>
 	<!--寄售流程 结束-->
-
+	<div class="row TabBotton">
+			<h2>二手卡回收常见问题</h2>
+			<div class="tabs">
+				<div id="tabs">
+					<div class="title">1、卡卡礼品网支持回收的二手卡有哪些？</div>
+					<div>卡卡礼品网暂时只针对网站公布回收的二手卡进行回收处理，目前支持回收的卡包括电商卡、商超卡、加油卡、游戏卡、话费卡等50余种，如果没有您想要提交的卡，您可以联系客服，后期我们会会逐步的发布更多的卡类回收，详情请参考网站公示。
+					</div>
+					<div class="title">2、游戏卡与话费卡必看问题！</div>
+					<div>游戏卡与话费卡为“自动结算”形式回收，用户提交订单后最快几分钟内即可收到回收款。请提交前认真核对选择的面额，如实际面额与选择面额不符，则需要人工干预，不仅费时费力，而且会影响您的款额到帐时间！
+					</div>
+					<div class="title">3、哪些二手卡卡不支持回收？</div>
+					<div>凡是已使用的卡、偷盗卡、非正常渠道获得的卡以及网站上没有的卡种我们都不回收。
+					</div>
+					<div class="title">4、回收放款需要多少时间？</div>
+					<div>工作时间内提交，一般两个小时内处理完成（特殊情况除外）；非工作时间内，处理时间将延期到下一个工作时间。
+					</div>
+					<div class="title">5、二手卡回收需要手续费么？</div>
+					<div>您好，回收价格已经包含手续费，不会再收取任何形式的手续费（除了支付宝提现和加急处理功能外）。
+					</div>
+				</div>
+				<div class="tabsIcon">
+					<img src="img/faq.jpg" alt="">
+				</div>
+			</div>
+		</div>
 
 	<div class="row inMiddle justify-content-center" >
 		支持<span>多种</span>支付渠道-享受<span>极速</span>发卡之旅
@@ -227,5 +292,9 @@
 	<iframe class="my_footer" src="footer/footer.html" frameborder="0" scrolling="no"></iframe>
 </div>
 <script src="js/index.js"></script>
+<script src="js/myUI.js"></script>
+<script>
+	$("#tabs").accordion();
+</script>
 </body>
 </html>

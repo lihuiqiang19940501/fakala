@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <style>
+        
+</style>
+<body>
+    <form method="post" action="/user/login">
+        登录手机号: <input type="text" name="phone" id="phone"><br>
+        用户密码: <input type="password" name="upwd"><br>
+        <input type="submit" value="登录">
+    </form>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+
+$("#phone").on("blur",function(){
+    var data=$("#phone").val();
+    $.ajax({
+        type:"post",
+        url: '/user/hasphone',
+        data: {phone:data},
+        success:function(res){
+           if(res.code===201){
+           alert("用户名已被占用")
+        }else if(res.code===202){
+           alert("可以使用")
+        }else
+            alertMsg('验证用户名出错！请稍后重试。')
+        }
+    });
+
+    //checkunameReg();
+});
+</script>
+</html>

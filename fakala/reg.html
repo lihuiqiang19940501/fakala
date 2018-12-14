@@ -14,86 +14,53 @@
     <style>
         .fail{color: red;}
         .success{color: green;}
+        p.footer{
+           text-align: center;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
-<!--boot布局容器-->
-<header>	
-	<div class="row" id="nav_top">
-		<div class="logop">
-			<a href="#"><img src="img/logo2.png" class="logo"></a>
-		</div>
-		<ul class="nav_first">
-			<li><a href="javascript:;">首页</a></li>
-			<li><a href="javascript:;">产品服务</a></li>
-			<li><a href="javascript:;">个人寄售</a></li>
-			<li><a href="javascript:;">商家入驻</a></li>
-		</ul>
-		<div>
-			<div class="search">
-				<input type="text" class="btn btn-outline-warning pl-0">
-				<input type="button" class="btn btn-warning" value="查询订单" placeholder="输入订单号快速查询">
-			</div>
-		</div>
-		<ul  class="nav_login">
-			<li><a href="javascript:;">登录</a></li>
-			<li><a href="javascript:;">注册</a></li>
-			<li><a href="javascript:;">帮助</a></li>
-			<li><a href="javascript:;">投诉</a></li>
-		</ul>
-		<div class="nav-icon" id="icon">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	</div>
-	<div class="nav_login_icon">
-		<ul class="rt icon1">
-			<li><a href="javascript:;">登录</a></li>
-			<li><a href="javascript:;">注册</a></li>
-			<li><a href="javascript:;">帮助</a></li>
-			<li><a href="javascript:;">投诉</a></li>
-		</ul>
-		<ul class="rt icon2">
-			<li><a href="javascript:;">首页</a></li>
-			<li><a href="javascript:;">产品服务</a></li>
-			<li><a href="javascript:;">个人寄售</a></li>
-			<li><a href="javascript:;">商家入驻</a></li>
-		</ul>
-	</div>
-</header>
-<br><br><br>
+<header></header>
     <!--banner部分-->
     <div class="row bjt">
             <div class="regP">
+               <!-- <form  method="post" action="/user/reg"> -->
                 <h3 class="text-center mt-3">欢迎注册发卡啦</h3>
                 <p>
-                    <input type="text" class="form-control w-75 ml-5 mt-3" placeholder="手机号" v-model="phone">
+                    <input type="text" class="form-control w-75 ml-5 mt-3" placeholder="手机号" v-model="phone" name="phone" id="phone">
                     <span class="ml-5" :class="spanClassPhone" v-cloak>{{msg1}}</span>
                 </p>
                 <p>
-                    <input type="password" class="form-control w-75 ml-5" placeholder="密码" v-model="upwd">
+                    <input type="password" class="form-control w-75 ml-5" placeholder="密码" v-model="upwd" name="upwd" id="upwd">
                     <span class="ml-5" :class="spanClassUpwd" v-cloak>{{msg2}}</span>
                 </p>
-                <p><input type="password" class="form-control w-75 ml-5" placeholder="确认密码" v-model="upwds">
+                <p><input type="password" class="form-control w-75 ml-5" placeholder="确认密码" v-model="upwds" name="upwds" id="upwds">
                     <span class="ml-5" :class="spanClassUpwds" v-cloak>{{msg3}}</span>
                 </p>
-                <p><input type="text" class="form-control w-75 ml-5" placeholder="邮箱" v-model="email">
+                <p><input type="text" class="form-control w-75 ml-5" placeholder="邮箱" v-model="email" name="email" id="email">
                     <span class="ml-5" :class="spanClassEmail" v-cloak>{{msg4}}</span>
                 </p>
                 <div class="d-flex">
-                    <input type="text" class="form-control yzmW ml-5" placeholder="请输入验证码" v-model="yzm">
-                    <canvas width="100" height="40" id="verifyCanvas"></canvas>
-                    <img id="code_img" class="rounded">
+                    <input type="text" class="form-control yzmW ml-5" placeholder="请输入验证码" v-model="yzm" name="syzm"id="syzm">
+                    <!-- <canvas width="100" height="40" id="verifyCanvas"></canvas>
+					<img id="code_img" class="rounded"> -->
+					<!-- <canvas id="c3" width="100" height="30"></canvas> -->
+					<i id="yzm">1+5=?</i>
                     <span class="ml-3 mt-2" :class="yanzheng" v-cloak>{{msg5}}</span>
                 </div>
-                <label class="ml-5 mt-2"><input type="checkbox" v-model="agree">同意  <a class="border">发卡啦用户协议</a></label>
-                <p><button class="btn btn-primary  w-75 ml-5 mt-1" :disabled="!agree">注册</button></p>
-                <p class="ml-5">已有账号?点击<a href="javascript:;">登录</a></p>
-            </div>
+                <label class="ml-5 mt-2"><input type="checkbox" v-model="agree" id="checkbox">同意  <a class="border">发卡啦用户协议</a></label>
+                <p><button class="btn btn-primary  w-75 ml-5 mt-1" id="submitBtn">注册</button></p>
+                <p class="ml-5">已有账号?点击<a href="login.html" target="_self" class="border">&nbsp;登录</a></p>
+             <!-- </form> -->
+                </div>
+        </div>
     </div>
-</div>
+    <p class="footer">Copyright © 2018-2020</p>
+    <p class="footer"> 发卡啦发卡平台</p>
+    <p class="footer"> All rights reserved. @版权所有 豫ICP备15009120号-2</p>
 <script src="js/vue.js"></script>
 <script src="js/reg.js"></script>
+
 </body>
 </html>
