@@ -1,14 +1,17 @@
 [v-cloak]{ display:none }
+
 .bjt{
 	background: url("../img/reg_banner.jpg");
-	height: 719px;
+	height: 950px;
+	background-position: 50% 50%;
+	background-size: cover;
 }
 .regP{
 	color: white;
 	width: 400px;
 	height:625px;
-	margin-left:10%;
-	margin-top: 3%;
+	margin-left:20%;
+	margin-top: 7%;
 	background: rgba(0,0,0,0.3);
 	border-radius: 5px;
 	border:3px solid transparent;
@@ -20,4 +23,10 @@
 }
 .yzmW{
 	width: 35%;
+}
+#yzm{
+	display: inline-block;
+	height: 38px;
+	line-height: 38px;
+	margin-left:20px; 
 }

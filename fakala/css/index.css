@@ -31,7 +31,7 @@
 	width: 100%;
 	height: 72px;
 	position: fixed;
-	z-index: 999;
+	z-index: 99999;
   }
 #nav_top{
   position: relative;
@@ -266,12 +266,122 @@ header .nav_login_icon ul{
 .Item:hover hr{width:90%}
 .MoverK{box-shadow:0px 0px 100px -20px #4e555b;margin-top: 1%}
 .MoverK:hover{transition:0.3s;box-shadow:0px 0px 25px 2px #4e555b;}
-
+/* 寄售流程 */
+#lct div.bulletin{
+	width: 1200px;
+	height: 60px;
+	margin: 0 auto;
+	font-size: 14px;
+	background: #fff;
+	border-bottom: 1px solid #aaa;
+}
+#lct div.bulletin i{
+	display: inline-block;
+	width: 60px;
+	height:60px;
+	background: url(../img/gg.png);
+	vertical-align: middle;
+}
+#lct div.bulletin span{
+	display: inline-block;
+}
+#lct .bulletin span.ggDetails{
+	width: 600px;
+	height: 16px;
+	overflow: hidden;
+}
+#lct .bulletin a{
+	color: blue;
+}
+#lct div.bulletin a:last-child{
+	margin-left: 170px ;
+}
+#lct .lcIcon{
+	width: 1200px;
+	height: 120px;
+	margin: 100px auto;
+	background: #fff;
+}
+#lct .lcIcon ul li{
+	width: 170px;
+	height: 110px;
+}
+#lct .lcIcon ul li.lcI div{
+	width:170px;
+	height: 65px;
+}
+#lct .lcIcon ul li.lcI div i{
+	margin: 0 auto;
+	display: block;
+	width:65px;
+	height: 65px;
+	background: url(../img/stepflow.png)
+}
+#lct .lcIcon ul li:nth-child(1) div i{background-position: 0px 0px}
+#lct .lcIcon ul li:nth-child(3) div i{background-position: 0px 81px}
+#lct .lcIcon ul li:nth-child(5) div i{background-position: -70px -70px}
+#lct .lcIcon ul li:nth-child(7) div i{background-position: -70px 0px}
+#lct div.lcIcon ul li b{
+	display: inline-block;
+	width: 170px;
+	height: 6px;
+	background: url(../img/stepflow.png);
+	background-position: 40px -140px;
+	margin-top: 55px;
+}
+/* 常见问题 */
+.TabBotton{
+	width: 1200px;
+	height: 500px;
+	margin: 0 auto;
+}
+.TabBotton h2{
+	width: 300px;
+	height: 50px;
+	font-size: 32px;
+	margin: 0px auto;
+	margin-top:70px;
+	text-align: center;
+	border-bottom:1px solid #31aae1; 
+	color: #31aae1;
+}
+.tabs{
+	width: 1200px;
+	height: 300px;
+	box-shadow: 0 0 5px #aaa;	
+}
+#tabs{
+	display: inline-block;
+	width: 900px;
+	border: 1px solid #aaa;
+}
+#tabs .title{
+	font-weight: normal;
+	font-size: 1.3em;
+	background: #f4f7fa;
+}
+#tabs div:nth-child(3),div:nth-child(4){
+	color: red ;
+}
+#tabs .title:hover{
+	color: #018ebb;
+}
+.tabs .tabsIcon{
+	width: 298px;
+	height: 300px;
+	float: right;
+	background: #fff;
+	border: 1px solid #aaa;
+}
+.tabs .tabsIcon img{
+	width: 250px;
+	margin: 24px 24px;
+}
 /*inMiddle*/
 .inMiddle{
 	height: 90px;
 	line-height: 90px;
-	font-size:2.5rem ;
+	font-size:2rem ;
 	background:linear-gradient(0deg,#126ccc 0%,#007DB3 100%) ;
 	color: #fff;
 }
@@ -370,4 +480,50 @@ header .nav_login_icon ul{
 #rec div ul li:hover span.showbtn{
 	width: 25px;
 	padding-left: 4px;
+}
+
+/* side侧边栏 */
+#side{
+	position: fixed;
+	top:35%;
+	right: 50px;
+	width: 50px;
+	height: 250px;
+}
+#side  li{
+	width: 48px;
+	height: 50px;
+	overflow: hidden;
+	background: url("../img/service_faka.png");
+	transition: all .1s linear;
+}
+#side li:nth-child(1){
+	background-position: 0px 0px;
+}
+#side li:nth-child(1):hover{
+	background-position: 48px 0px;
+}
+#side li:nth-child(2){
+	background-position: 0px -50px;
+}
+#side li:nth-child(2):hover{
+	background-position: 48px -50px;
+}
+#side li:nth-child(3){
+	background-position: 0px -100px;
+}
+#side li:nth-child(3):hover{
+	background-position: 48px -100px;
+}
+#side li:nth-child(4){
+	background-position: 0px -150px;
+}
+#side li:nth-child(4):hover{
+	background-position:48px -150px;
+}
+#side li:nth-child(5){
+	background-position: 0px -200px;
+}
+#side li:nth-child(5):hover{
+	background-position: 48px -200px;
 }

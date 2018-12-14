@@ -1,0 +1,24 @@
+/************** accordion ***************/
+.accordion{width:80%; margin:0 auto;}
+.accordion>.title{
+  background:#eee; border:1px soild #aaa;
+  padding:6px; font-size:1.5em; 
+  font-weight:bold; cursor:pointer;
+}
+.accordion>.content{
+  border-left:1px solid #eee;
+  border-right:1px solid #eee;
+}
+.accordion>:last-child{
+  border-bottom:1px solid #eee;
+}
+.accordion>.content.fade{
+  height:0;
+  opacity:0;
+  overflow:hidden;
+  transition:all .5s linear;
+}
+.accordion>.content.in{
+  height:84px;
+  opacity:1;
+}
