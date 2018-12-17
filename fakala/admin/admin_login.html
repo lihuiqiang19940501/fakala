@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 400px;
+            height: 300px;
+            margin: 0 auto;
+            margin-top: 10%;
+            border: 2px solid #aaa;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 8px #aaa;
+        }
+        div:hover{
+            box-shadow: 0 0 8px #3D84FD;
+            border: 2px solid #3D84FD;
+        }
+        div h1{
+            text-align: center;
+            color: #3D84FD;
+            border-bottom: 1PX solid #aaa;
+            padding-bottom: 10px;
+            font-family: "宋体";
+        }
+        div input{
+            width: 300px;
+            height: 40px;
+            background: #fff;
+            margin-top: 10px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+        div input[type="submit"]{
+            margin-top: 25px;
+            border: 2px solid #aaa;
+            font-size: 1.3rem;
+            width: 200px;
+        }
+        div input[type="submit"]:hover{
+            border: 2px solid #3D84FD;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>发卡啦后台管理系统</h1>
+        <form action="/admin" method="post">
+        <input type="text" name="aName" id="aName" placeholder="请输入管理员帐号"><br>
+        <input type="password" name="aPwd" id="aPwd" placeholder="请输入管理员密码"><br>
+        <input type="submit" value="登录">
+        </form>
+    </div>
+    <script>
+   
+    </script>
+</body>
+</html>
