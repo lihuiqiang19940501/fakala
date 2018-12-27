@@ -196,6 +196,7 @@ $("#phone").blur(function(){
             location.href="http://127.0.0.1:3333/login.html";
         }else if(res.code===202){
         //    location.href="http://127.0.0.1:3333/index.html";
+        return;
         }else
             alertMsg('验证用户名出错！请稍后重试。')
         }
@@ -216,6 +217,8 @@ $("#submitBtn").on("click",function(){
         if(res.code===0){
             alert("请填写用户名或密码!")
         }else if(res.code===200){
+            //注册成功保存用户名,然后首页上加载出手机号
+            sessionStorage.setItem("phone",phone);
              alert("注册成功,前往主页!")
             location.href="http://127.0.0.1:3333/index.html";
         }else if(res.code===209){

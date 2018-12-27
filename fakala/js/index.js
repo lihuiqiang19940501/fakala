@@ -45,6 +45,9 @@
 	</div>
 `)*/
  $('body>div.container-fluid>header').load('header.html');
+ if(sessionStorage.getItem("phone")){
+ $(".join").html('进入后台管理'); 
+ }
 // ,function(){
 //     $.ajax({
 //         url: 'data/user/session_data.php',
@@ -162,5 +165,29 @@ $.ajax({
         <span class="ggDetails">${last.ndetails}</span>
         <a href="javascript:;">查看更多..</a>`;
         $(".bulletin").html(adHtml);
+    }
+})
+// 异步加载两行官方回购卡
+$.ajax({
+    url:"/card/class",
+    type:"get",
+    success:function(res){
+        var ul1="",ul2="";
+        for(i=0;i<4;i++){
+            ul1+=`<li>
+                    <img src="${res[i].cpic}" alt="">
+                    <span class="cardName">${res[i].cname}</span>
+                    <span class="cardSell">${res[i].rate}折回购</span>
+                    <span class="showbtn">我要出售</span>
+                   </li>`;
+            ul2+=`<li>
+            <img src="${res[i+4].cpic}" alt="">
+            <span class="cardName">${res[i+4].cname}</span>
+            <span class="cardSell">${res[i+4].rate}折回购</span>
+            <span class="showbtn">我要出售</span>
+           </li>`;       
+        }
+        $(".card_class1").html(ul1);
+        $(".card_class2").html(ul2);
     }
 })
