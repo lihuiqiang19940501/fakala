@@ -1,0 +1,100 @@
+*{margin: 0;padding: 0;} ul{list-style: none;}
+body{
+    background: #f5f5f5;
+}
+header{
+    width: 100%;
+    height: 70px;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 0 10px #aaa;
+}
+
+header>img{
+    width: 200px;
+    height: 70px;
+    float: left;
+}
+header h1{
+    width: 386px;
+    height: 70px;
+    font-size: 42px;
+    line-height: 70px;
+    color: #3D84FD;
+    font-family: "宋体";
+    margin:0 auto; 
+    position: absolute;
+    left: 50%;
+    margin-left: -193px;
+}
+header>p{
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    float: right;
+    margin-right: 5%;
+    cursor: pointer;
+}
+header p #admin{
+    margin-right: 10px;
+}
+header p a{
+    margin-left: 10px;
+}
+header p #admin:hover,header p a:hover{
+    color: #3D84FD;
+}
+/* 侧边导航栏 */
+#main{
+    width: 1400px;
+    height: 900px;
+    position: relative;
+    margin: 10px auto;
+    box-shadow: 0 0 10px #aaa;
+    box-sizing: border-box;
+}
+aside{
+    width:200px;
+    height: 900px;
+    position: absolute;
+    left: 0; 
+    background: #fff;
+    box-shadow: 0 0 1px #aaa;
+}
+#main aside h1{
+    text-align: center;
+    color: #98a6ad;
+    margin: 20px auto;
+}
+#main aside h4{
+    color: #435966;
+    font-size: 22px;
+    border-bottom:1px solid #aaa;
+    height: 40px; 
+    line-height:40px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+#main aside h4:hover,aside ul li:hover{
+    color: #71b6f9;
+}
+.color{
+    color: #71b6f9 !important;
+}
+aside ul li{
+    font-size: 18px;
+    color: #435966;
+    height: 50px; 
+    line-height:50px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+/* admin_body */
+#admin_body{
+    width: 1200px;
+    height: 900px;
+    position: absolute;
+    right: 0; 
+}

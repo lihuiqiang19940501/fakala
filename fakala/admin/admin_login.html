@@ -49,13 +49,38 @@
 <body>
     <div>
         <h1>发卡啦后台管理系统</h1>
-        <form action="/admin" method="post">
         <input type="text" name="aName" id="aName" placeholder="请输入管理员帐号"><br>
         <input type="password" name="aPwd" id="aPwd" placeholder="请输入管理员密码"><br>
         <input type="submit" value="登录">
-        </form>
     </div>
+    <script src="js/jquery.min.js"> </script>
     <script>
+        var $sub =$("input[type='submit']");
+        $sub.click(function(){
+        var aname =$("#aName").val();
+        var apwd =$("#aPwd").val();         
+        $.ajax({
+                type:"post",
+                url:'/admin',
+                dataType: 'json',
+                data:{aName:aname,aPwd:apwd},
+                success:function(res){
+                    if(res.code===200){
+                        //1:将用户名密码保存到 sessionStorage
+                        sessionStorage.setItem("name",res.name);
+                        sessionStorage.setItem("pwd",res.pwd);
+                        //2:3s跳转index.html
+                        location.href = "http://127.0.0.1:3333/admin.html";
+                    }else if(res.code===400){
+                        alert("输入有误!")
+                        location.href = "http://127.0.0.1:3333/admin_login.html";
+                    }else{
+                        alert("未知.请稍后再试.")
+                        location.href = "http://127.0.0.1:3333/admin_login.html";
+                    }
+                }
+            })
+        })
    
     </script>
 </body>

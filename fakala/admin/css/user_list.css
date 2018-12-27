@@ -1,0 +1,37 @@
+/* 导航 */
+#nav{
+    width: 1200px;
+    height: 50px;
+    line-height: 50px;
+    color:#435966;
+    font-size: 20px;
+    box-shadow: 0 0 5px #aaa;
+    text-align: center;
+}
+#nav select,#nav input,#nav button{
+    height: 30px;
+    font-size: 16px;
+    border-radius:3px;
+    border: 1px solid #aaa;
+}
+#nav select{
+    margin-left: 20px;
+}
+#nav button{
+    margin-left: 20px;
+    width: 100px;
+    background: #5b69bc;
+    color: #fff;
+    cursor: pointer;
+}
+/* 表格 */
+table{
+    width: 1000px;
+    border: 1px solid #aaa;
+    margin: 20px auto;
+    font-size: 18px;
+    border-collapse:collapse;
+    border-spacing:0;
+}
+th{border: 1px solid #aaa
+}

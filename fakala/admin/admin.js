@@ -9,12 +9,11 @@ router.post('/admin',(req,res)=>{
     pool.query(sql,[aname,apwd],(err,result)=>{
         if(err) throw err;
         if(result.length>0){
-            
-        sessionStorage.setItem("aname",aname);
-        sessionStorage.setItem("apwd",apwd);
-        res.redirect('/admin.html');
+        res.send({code:200,name:aname,pwd:apwd})
+        // res.redirect('/admin.html');
         }else{
-        res.redirect('/admin_login.html');
+        res.send({code:400,msg:"输入错误"})
+        //res.redirect('/admin_login.html');
         }
     })
     

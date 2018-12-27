@@ -5,8 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
 </head>
 <body>
-    <div></div>
+    <header>
+       <img src="img/logo2.png" alt="">
+       <h1 class="title">发卡啦后台管理系统</h1>
+        <p>
+            <span id="admin">管理员&nbsp;:&nbspfakala</span>|<a>退出系统</a>
+        </p>
+    </header>
+    <div id="main">
+        <aside>
+            <h1>导航菜单</h1>
+            <h4>订单管理</h4>
+            <h4>用户管理</h4>
+            <ul>
+                <li class="user_list">用户列表</li>
+                <li>用户商品列表</li>
+            </ul>
+            <h4>发卡啦管理</h4>
+            <ul>
+                <li>自营卡类</li>
+                <li>费率修改</li>
+            </ul>
+        </aside>
+        <div id="admin_body">
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="session.js"></script>
 </body>
 </html>
