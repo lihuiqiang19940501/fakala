@@ -1,0 +1,69 @@
+header{
+	width: 100%;
+	height: 72px;
+	position: fixed;
+	z-index: 99999;
+  }
+  header:hover{
+      cursor: pointer;
+  }
+  .logop{
+  position: relative;
+  justify-content: space-between;
+  font-size: 1.6em;
+  color:#fff;
+  height: 72px;
+  line-height: 72px;
+  background:#fff;
+  box-shadow:0px 0px 25px 2px #4e555b;
+  
+}
+.back{
+    font-size: 12px;
+    color:#fff;
+    cursor: pointer;
+}
+.back:hover{
+    text-decoration: underline;
+}
+.regP:hover .back{
+    color: #e6d51e;
+}
+.logop span {
+    color: #4f4d4e;
+    font-size: 24px;
+    vertical-align: baseline;
+    position: relative;
+    top: 15px;
+    left: 30px;
+}
+.logo{
+    height:65px;
+    margin-left: 10%;
+}
+.bjt{
+	background: url("../img/reg_banner.jpg");
+	height: 950px;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+.regP{
+	color: white;
+	width: 400px;
+	height:450px;
+	margin-left:20%;
+	margin-top: 10%;
+	background: rgba(0,0,0,0.3);
+	border-radius: 5px;
+	border:3px solid transparent;
+}
+.regP:hover{
+	border-radius:10px;
+	border:3px solid rgba(0, 123, 255, 0.5);
+	background: rgba(0,0,0,0.5);
+}
+
+    p.footer{
+    text-align: center;
+    margin: 0 auto;
+    }

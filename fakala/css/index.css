@@ -441,13 +441,14 @@ header .nav_login_icon ul{
 	border: 1px solid #eee;
 	border-radius: 3px;
 	cursor: pointer;
+	overflow: hidden;
 }
 #rec div ul li:hover{
 	border: 1px solid #31aae1;
 }
 #rec div ul li img{
 	width: 150px;
-	height: 95px;
+	
 }
 #rec div ul li span.cardSell{
 	color: red;
